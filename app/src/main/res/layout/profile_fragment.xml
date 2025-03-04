@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/profile_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.ProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteGrey">
+
+        <RelativeLayout
+            android:id="@+id/rel_top"
+            android:layout_width="fill_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/header"
+                style="@style/InputsThemeDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="@string/MyProfile"
+                android:textColor="@color/textColor" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rel_top"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@color/whiteGrey"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/personal_tv"
+                style="@style/InputsThemeDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/white_background_r6"
+                android:drawableStart="@drawable/ic__left_black"
+                android:drawableEnd="@drawable/ic_account1"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/PersonalData"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/change_tv"
+                style="@style/InputsThemeDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/white_background_r6"
+                android:drawableStart="@drawable/ic__left_black"
+                android:drawableEnd="@drawable/ic_lock"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/ChangePassword"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/about_tv"
+                style="@style/InputsThemeDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/white_background_r6"
+                android:drawableStart="@drawable/ic__left_black"
+                android:drawableEnd="@drawable/help"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/AboutUs"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/complain_tv"
+                style="@style/InputsThemeDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/white_background_r6"
+                android:drawableStart="@drawable/ic__left_black"
+                android:drawableEnd="@drawable/ic_mail"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/SendComplain"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/terms_tv"
+                style="@style/InputsThemeDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/white_background_r6"
+                android:drawableStart="@drawable/ic__left_black"
+                android:drawableEnd="@drawable/termsconditions"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/TermsAndConditions"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/logout_tv"
+                style="@style/InputsThemeDark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:drawableEnd="@drawable/logout"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/raleway"
+                android:gravity="center"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="@string/LogOut"
+                android:textColor="@color/colorPrimaryDark" />
+
+        </LinearLayout>
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            app:mk_color="@color/colorPrimaryDark"
+            app:mk_type="Whirlpool" />
+
+    </RelativeLayout>
+
+</FrameLayout>

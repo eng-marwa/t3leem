@@ -1,0 +1,43 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="InputsThemeDark" parent="AppTheme">
+        <item name="colorBackgroundFloating">@color/colorPrimary</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+        <item name="checkedTextViewStyle">@color/DarkGrey</item>
+        <item name="android:fontFamily">@font/raleway</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Medium</item>
+
+    </style>
+    <style name="bottom_sheet" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:colorBackground">     @android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+    <style name="AppButtonsTheme">
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">@font/cairo_regular</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+    </style>
+
+    <style name="SeekBarTheme" parent="Widget.AppCompat.SeekBar">
+        <item name="android:colorAccent">@color/colorPrimary</item>
+    </style>
+
+    <style name="bottomNavigationStyle" parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/cairo_regular</item>
+    </style>
+
+</resources>

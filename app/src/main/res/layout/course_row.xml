@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/parent_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_background"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_background">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/colorPrimaryDark"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:id="@+id/txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@+id/img_profile"
+                android:gravity="start"
+                android:background="@android:color/transparent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_toStartOf="@+id/img_profile"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/textColor"/>
+
+            <TextView
+                android:id="@+id/txt_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teacher_name"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toStartOf="@+id/img_profile"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/textColor"
+                android:textColorHint="@color/textColor" />
+
+            <TextView
+                android:id="@+id/txt_folder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teacher_name"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="4dp"
+                android:layout_alignParentStart="true"
+                android:drawableEnd="@drawable/folder_video"
+                android:drawablePadding="8dp"
+                android:background="@android:color/transparent"
+                android:enabled="false"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/txt_student"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teacher_name"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="4dp"
+                android:layout_toEndOf="@+id/txt_folder"
+                android:background="@android:color/transparent"
+                android:drawableEnd="@drawable/student"
+                android:drawablePadding="8dp"
+                android:enabled="false"
+                android:gravity="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/textColor" />
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

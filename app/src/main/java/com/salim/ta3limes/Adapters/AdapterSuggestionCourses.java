@@ -1,0 +1,123 @@
+package com.salim.ta3limes.Adapters;
+
+import android.content.Context;
+import android.content.Intent;
+import android.graphics.Typeface;
+import android.net.Uri;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.salim.ta3limes.Activities.CourseDetailsActivity;
+import com.salim.ta3limes.Activities.CourseVideosActivity;
+import com.salim.ta3limes.Models.response.CenterCoursesModelResponse;
+import com.salim.ta3limes.Models.response.CourseDataModelResponse;
+import com.salim.ta3limes.Models.response.CourseVideosModelResponse;
+import com.salim.ta3limes.R;
+import com.salim.ta3limes.utilities.SharedPreferencesUtilities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import de.hdodenhof.circleimageview.CircleImageView;
+
+public class AdapterSuggestionCourses extends RecyclerView.Adapter<AdapterSuggestionCourses.ViewHolder> {
+
+    Context context;
+   List<CourseVideosModelResponse.Suggestlessone> suggestBeans;
+    LayoutInflater inflater;
+    private Typeface custom_font;
+    SharedPreferencesUtilities preferencesUtilities;
+
+    public AdapterSuggestionCourses(Context context,  List<CourseVideosModelResponse.Suggestlessone> suggestBeans) {
+        this.context = context;
+        this.suggestBeans = suggestBeans;
+        inflater = LayoutInflater.from(context);
+        preferencesUtilities = new SharedPreferencesUtilities(context);
+    }
+
+    public List<CourseVideosModelResponse.Suggestlessone> getSuggestionBeans() {
+        return suggestBeans;
+    }
+
+    public void setSuggestionList(List<CourseVideosModelResponse.Suggestlessone> coursesList) {
+        if (coursesList != null)
+            suggestBeans.addAll(coursesList);
+        notifyDataSetChanged();
+    }
+
+    @NonNull
+    @Override
+    public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View v = inflater.inflate(R.layout.suggestion_course_row, parent, false);
+        try {
+            custom_font = Typeface.createFromAsset(parent.getContext().getAssets(), "Cairo-Regular.ttf");
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+        return new ViewHolder(v);
+    }
+
+    @Override
+    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+
+        CourseVideosModelResponse.Suggestlessone courseBean = suggestBeans.get(position);
+
+        preferencesUtilities.setCenterId(String.valueOf(courseBean.id));
+        holder.courseName.setText(courseBean.name);
+        holder.teacherName.setText(courseBean.teacher);
+        holder.faculty.setText(courseBean.organisation);
+
+        Glide.with(context)
+                .load(courseBean.image)
+                .error(R.drawable.profile_man)
+                .diskCacheStrategy(DiskCacheStrategy.NONE)
+                .into(holder.imgProfile);
+
+        holder.layout.setOnClickListener(v -> {
+                Intent intent = new Intent(context, CourseDetailsActivity.class);
+                intent.putExtra("courseId", courseBean.id+"");
+                intent.putExtra("courseTitle", courseBean.name);
+                context.startActivity(intent);
+        });
+
+        holder.serve.setOnClickListener(v -> context.startActivity(new Intent(Intent.ACTION_DIAL, Uri.parse("tel: " + courseBean.phone))));
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return suggestBeans.size();
+    }
+
+    public class ViewHolder extends RecyclerView.ViewHolder {
+
+        CardView layout;
+        TextView courseName, teacherName;
+        CircleImageView imgProfile;
+        TextView serve, faculty;
+
+        public ViewHolder(@NonNull View itemView) {
+            super(itemView);
+
+            layout = itemView.findViewById(R.id.parent_layout);
+            courseName = itemView.findViewById(R.id.txt_name);
+            teacherName = itemView.findViewById(R.id.teacher_name);
+            imgProfile = itemView.findViewById(R.id.img_profile);
+            serve = itemView.findViewById(R.id.tvServe);
+            faculty = itemView.findViewById(R.id.tvFaculty);
+
+            courseName.setTypeface(custom_font);
+            teacherName.setTypeface(custom_font);
+            serve.setTypeface(custom_font);
+            faculty.setTypeface(custom_font);
+        }
+    }
+}

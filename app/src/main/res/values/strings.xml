@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">Ta3lem</string>
+    <string name="default_notification_channel_id" tools:ignore="ExtraTranslation">121512</string>
+    <string name="AboutUs">عنا</string>
+    <string name="MyProfile">حسابي</string>
+    <string name="Centers_title">المراكز المشترك معها</string>
+    <string name="ChangePassword">تغيير كلمة المرور</string>
+    <string name="InputOldPassword">كلمة المرور القديمة</string>
+    <string name="NewPassword">كلمة المرور الجديدة</string>
+    <string name="InputNewPassword">كلمة المرور الجديدة</string>
+    <string name="InputNewPasswordConfimation"> تأكيد كلمة المرور الجديدة</string>
+    <string name="CommentsandQues">التعليقات والاسئلة</string>
+    <string name="InputComment">اكتب تعليق او سؤال</string>
+    <string name="CourseName">اسم الكورس</string>
+    <string name="CourseInstractor">مقدم الكورس</string>
+    <string name="CenterName">اسم السنتر</string>
+    <string name="CourseBeggining">موعد بدء الكورس</string>
+    <string name="CourseDesc">وصف الكورس</string>
+    <string name="CourseStudents">عدد الطلاب المشتركين في الكورس</string>
+    <string name="MobileNumber">رقم الموبايل</string>
+    <string name="Password">كلمة المرور</string>
+    <string name="ForgetPassword">نسيت كلمة المرور ؟</string>
+    <string name="AcceptTerms">الموافقة علي الشروط والاحكام</string>
+    <string name="Login">دخول</string>
+    <string name="LoginTitle">تسجيل دخول</string>
+    <string name="MyCourses">كورساتي</string>
+    <string name="Hello">مرحبا</string>
+    <string name="PersonalData">البيانات الشخصية</string>
+    <string name="EducationalData">البيانات الدراسية</string>
+    <string name="LogOut">تسجيل الخروج</string>
+    <string name="TermsAndConditions">الشروط والاحكام</string>
+    <string name="SendComplain">ارسال شكوي</string>
+    <string name="Send">ارسال</string>
+    <string name="WriteComplain">اكتب الشكوي</string>
+    <string name="Loading">loading...</string>
+    <string name="change">تغيير</string>
+    <string name="InputEmail">ادخل البريد الاكتروني</string>
+    <string name="InputCode">ادخل الكود</string>
+    <string name="notification_title">الإشعارات</string>
+
+    <string name="agora_app_id">b0043617d0ea462cb2c7b5687a1f984e</string>
+    <!-- Obtain a temp Access Token at https://dashboard.agora.io -->
+    <!-- You will need to deploy your own token server for production release -->
+    <!-- Leave this value empty if Security keys/Token is not enabled for your project -->
+    <string name="skip">تخطي</string>
+    <string name="continu">استمرار</string>
+
+    <string name="start">ابدأ</string>
+    <string name="delete">حذف</string>
+    <string name="edit">تعديل</string>
+    <string name="new_comment">اكتب التعليق الجديد</string>
+
+    <!--    006b0043617d0ea462cb2c7b5687a1f984eIAAHEBn3kXrO656zudGzFXSSVWhIbcfXUUq2IomXqWznXJj2B7QAAAAAEAAi3E9lc76SXwEAAQB1vpJf-->
+    <!--    006b0043617d0ea462cb2c7b5687a1f984eIABXaDCg81dZ08uvUs0We3xqPHsAgk9pEre0eatATWXNizFVmfeCmd9zIgAQQgAACKSRXwQAAQCYYJBfAwCYYJBfAgCYYJBfBACYYJBf-->
+</resources>

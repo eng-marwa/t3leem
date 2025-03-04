@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PersonalDataActivity"
+    android:background="@color/whiteGrey">
+
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:id="@+id/header"
+            style="@style/InputsThemeDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/PersonalData"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:background="@color/colorPrimaryDark"
+            android:src="@drawable/ic_arrow_right" />
+
+    </RelativeLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/rel_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:elevation="1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile_man"
+        app:civ_border_color="@color/colorPrimaryDark"
+        app:civ_border_width="3dp" />
+
+    <ImageView
+        android:id="@+id/ivAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_circle"
+        android:layout_alignBottom="@id/user_profile"
+        android:layout_toEndOf="@id/user_profile"
+        android:elevation="3dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/white_background">
+
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="55dp"
+            android:gravity="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/textColor"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/available"
+            style="@style/InputsThemeDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:padding="4dp"
+            android:gravity="center"
+            android:textColor="@color/textColor"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/InputsThemeDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_profile"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/EducationalData"
+        android:textColor="@color/textColor" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/white_background"
+        android:orientation="vertical"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp">
+
+    <TextView
+        android:id="@+id/faculty_txt"
+        style="@style/InputsThemeDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/white_grey_background"
+        android:drawableStart="@drawable/ic_lock1"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/Dgrey" />
+
+    <TextView
+        android:id="@+id/department_txt"
+        style="@style/InputsThemeDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/white_grey_background"
+        android:drawableStart="@drawable/ic_lock1"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/Dgrey" />
+    <TextView
+        android:id="@+id/year_txt"
+        style="@style/InputsThemeDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/white_grey_background"
+        android:drawableStart="@drawable/ic_lock1"
+        android:drawablePadding="16dp"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingTop="4dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/Dgrey" />
+
+    </LinearLayout>
+
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:id="@+id/loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        app:mk_color="@color/colorPrimaryDark"
+        app:mk_type="Whirlpool"/>
+
+</RelativeLayout>

@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".Activities.RegisterActivity">
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+     >
+
+      <ImageView
+          android:id="@+id/imgLogo"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toTopOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          android:src="@drawable/logo"
+          android:layout_marginTop="40dp"/>
+
+      <androidx.cardview.widget.CardView
+          android:id="@+id/cvIdImage"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+           app:cardCornerRadius="12dp"
+          android:layout_marginTop="15dp"
+          app:layout_constraintHeight_percent=".15"
+          app:layout_constraintWidth_percent=".72"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/imgLogo">
+         <ImageView
+             android:id="@+id/imgIdCard"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:src="@drawable/ic_id_card"
+             android:scaleType="fitXY"
+
+ />
+      </androidx.cardview.widget.CardView>
+
+
+      <TextView
+          android:id="@+id/tvDummy"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text=" صوره الكارنيه"
+          android:layout_marginTop="4dp"
+          style="@style/InputsThemeDark"
+          android:textColor="@color/textColor"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/cvIdImage" />
+      <TextView
+          android:id="@+id/tvDummy1"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="ادخل الاسم"
+
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="10dp"
+          android:layout_marginTop="15dp"
+          style="@style/InputsThemeDark"
+          android:textColor="@color/textColor"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/tvDummy" />
+      <EditText
+          android:id="@+id/etStudentName"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+         app:layout_constraintTop_toBottomOf="@id/tvDummy1"
+         app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+          android:hint="الاسم"
+          android:inputType="textPersonName"
+          android:layout_marginTop="8dp"
+          android:background="@drawable/curved_fifteen"
+         android:paddingStart="8dp"
+         android:paddingTop="10dp"
+         android:paddingBottom="10dp"
+         android:paddingEnd="12dp"/>
+      <TextView
+          android:id="@+id/tvDummy2"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="ادخل الهاتف"
+
+          android:layout_marginTop="15dp"
+          style="@style/InputsThemeDark"
+          android:textColor="@color/textColor"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+          app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintTop_toBottomOf="@+id/etStudentName" />
+      <EditText
+          android:id="@+id/etStudentPhone"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/tvDummy2"
+          app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+          android:hint="رقم الهاتف"
+
+          android:inputType="phone"
+          android:gravity="right"
+          android:layout_marginTop="8dp"
+          android:background="@drawable/curved_fifteen"
+          android:paddingStart="8dp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:paddingEnd="12dp"/>
+      <TextView
+          android:id="@+id/tvDummy3"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="ادخل المحافظ"
+
+          android:layout_marginTop="15dp"
+          style="@style/InputsThemeDark"
+          android:textColor="@color/textColor"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+          app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintTop_toBottomOf="@+id/etStudentPhone" />
+      <Spinner
+          android:id="@+id/spCountry"
+          android:layout_width="0dp"
+          android:layout_height="52dp"
+          app:layout_constraintTop_toBottomOf="@id/tvDummy3"
+          app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+
+          android:layout_marginTop="8dp"
+          android:background="@drawable/curved_fifteen"
+
+         />
+      <TextView
+          android:id="@+id/tvDummy4"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="اختر الكليه"
+
+          android:layout_marginTop="15dp"
+          style="@style/InputsThemeDark"
+          android:textColor="@color/textColor"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+          app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintTop_toBottomOf="@+id/spCountry" />
+      <Spinner
+          android:id="@+id/spCollege"
+          android:layout_width="0dp"
+          android:layout_height="52dp"
+          app:layout_constraintTop_toBottomOf="@id/tvDummy4"
+          app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+
+          android:layout_marginTop="8dp"
+          android:background="@drawable/curved_fifteen"
+          />
+      <TextView
+          android:id="@+id/tvDummy5"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text="اختر التخصص"
+
+          android:layout_marginTop="15dp"
+          style="@style/InputsThemeDark"
+          android:textColor="@color/textColor"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+          app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintTop_toBottomOf="@+id/spCollege" />
+      <Spinner
+          android:id="@+id/spSpecialization"
+          android:layout_width="0dp"
+          android:layout_height="52dp"
+          app:layout_constraintTop_toBottomOf="@id/tvDummy5"
+          app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+
+          android:layout_marginTop="8dp"
+          android:background="@drawable/curved_fifteen"
+
+         />
+      <TextView
+          android:id="@+id/tvDummy6"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text=" رابط الفيسبوك"
+
+          android:layout_marginTop="15dp"
+          style="@style/InputsThemeDark"
+          android:textColor="@color/textColor"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+          app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintTop_toBottomOf="@+id/spSpecialization" />
+      <EditText
+          android:id="@+id/etFaceBookLink"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/tvDummy6"
+          app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+          android:hint="فيسبوك"
+          android:inputType="textUri"
+          android:layout_marginTop="8dp"
+          android:background="@drawable/curved_fifteen"
+          android:paddingStart="8dp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:paddingEnd="12dp"/>
+      <TextView
+          android:id="@+id/tvDummy7"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:text=" ادخل كلمه المرور"
+
+          android:layout_marginTop="15dp"
+          style="@style/InputsThemeDark"
+          android:textColor="@color/textColor"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+          app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintTop_toBottomOf="@+id/etFaceBookLink" />
+      <EditText
+          android:id="@+id/etPassword"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          app:layout_constraintTop_toBottomOf="@id/tvDummy7"
+          app:layout_constraintStart_toStartOf="@id/tvDummy1"
+          app:layout_constraintEnd_toEndOf="@id/tvDummy1"
+          android:hint="كلمه المرور"
+          android:gravity="right"
+          android:inputType="textPassword"
+          android:layout_marginTop="8dp"
+          android:background="@drawable/curved_fifteen"
+          android:paddingStart="8dp"
+          android:paddingTop="10dp"
+          android:paddingBottom="10dp"
+          android:paddingEnd="12dp"/>
+
+      <Button
+          android:id="@+id/btnConfirm"
+          style="@style/InputsThemeDark"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="30dp"
+          android:layout_marginBottom="20dp"
+          android:background="@drawable/curved_ten_orange"
+          android:backgroundTint="@color/black"
+          android:text="@string/Send"
+          android:textColor="@color/white"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintHorizontal_bias="0.501"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/etPassword"
+          app:layout_constraintVertical_bias="0.0"
+          app:layout_constraintWidth_percent=".4" />
+
+      <com.tuyenmonkey.mkloader.MKLoader
+          android:id="@+id/loading"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+
+           android:visibility="gone"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent"
+          app:mk_color="@color/colorPrimaryDark"
+          app:mk_type="Whirlpool" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

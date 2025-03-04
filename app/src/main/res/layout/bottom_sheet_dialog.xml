@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bottom_sheet_background">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        style="@style/InputsThemeDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="لكي تتمكن من فتح الملف"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:background="@android:color/transparent"
+        android:textColor="@color/textColor"/>
+
+    <TextView
+        android:id="@+id/txt_Title1"
+        style="@style/InputsThemeDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:text="رجاء ادخال الكود الخاص بك"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:background="@android:color/transparent"
+        android:textColor="@color/textColor"/>
+
+    <EditText
+        android:id="@+id/etCode"
+        style="@style/InputsThemeDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txt_Title1"
+        android:background="@drawable/grey_background"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:hint="ادخل الكود الخاص بك"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:padding="4dp"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/btnSubmit"
+        style="@style/AppButtonsTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/etCode"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/dark_grey_background"
+        android:text="دخـول"
+        android:padding="8dp"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/txtTitle2"
+        style="@style/InputsThemeDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnSubmit"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="للاستفسار تواصل معنا"
+        android:background="@android:color/transparent"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/textColor"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/tvWhatsApp"
+        style="@style/InputsThemeDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/txtTitle2"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/green_background"
+        android:drawablePadding="16dp"
+        android:text="واتس اب"
+        android:textColor="@color/white"
+        android:paddingEnd="32dp"
+        android:paddingStart="32dp"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        app:drawableEndCompat="@drawable/ic_whatsapp"
+        app:drawableStartCompat="@drawable/ic_left" />
+
+    <TextView
+        android:id="@+id/tvPhone"
+        style="@style/InputsThemeDark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:layout_below="@id/tvWhatsApp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/red_background"
+        android:drawablePadding="16dp"
+        android:text="موبايل"
+        android:textColor="@color/white"
+        android:paddingEnd="32dp"
+        android:paddingStart="32dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp"
+        app:drawableEndCompat="@drawable/ic_phone"
+        app:drawableStartCompat="@drawable/ic_left" />
+
+
+</RelativeLayout>

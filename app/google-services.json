@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "531986863118",
+    "firebase_url": "https://ta3lim-c96a1.firebaseio.com",
+    "project_id": "ta3lim-c96a1",
+    "storage_bucket": "ta3lim-c96a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531986863118:android:c71bbea5400f5020fa585f",
+        "android_client_info": {
+          "package_name": "com.salim.ta3lem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531986863118-5csjdfbfp7alejvkpob4dtmbjnn0lrnm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.salim.ta3lem",
+            "certificate_hash": "5fe575f31490471a32114e24a898534f0bc5d3c9"
+          }
+        },
+        {
+          "client_id": "531986863118-6ccm1lfel3jo6615e1dp9kljs9k3sqft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBsDdjLt_nJW7ocnrdFBgvKYlT3uwHaOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531986863118-6ccm1lfel3jo6615e1dp9kljs9k3sqft.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "531986863118-8s78jncgd9a14f2r0ponf649kopgb9gn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.yisweb.apps.taleeem"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531986863118:android:f69fc0a960510860fa585f",
+        "android_client_info": {
+          "package_name": "com.salim.ta3limes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531986863118-jjpq5qu3b5avgggk0207gkgn6ikgevmi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.salim.ta3limes",
+            "certificate_hash": "5fe575f31490471a32114e24a898534f0bc5d3c9"
+          }
+        },
+        {
+          "client_id": "531986863118-6ccm1lfel3jo6615e1dp9kljs9k3sqft.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBsDdjLt_nJW7ocnrdFBgvKYlT3uwHaOU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531986863118-6ccm1lfel3jo6615e1dp9kljs9k3sqft.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "531986863118-8s78jncgd9a14f2r0ponf649kopgb9gn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.yisweb.apps.taleeem"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

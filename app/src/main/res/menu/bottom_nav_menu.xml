@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_courses"
+        android:icon="@drawable/ic_courses"
+        android:title="كورساتي"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_library"
+        android:icon="@drawable/ic_folder1"
+        android:title="مكتبتي"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:showAsAction="ifRoom" />
+
+
+    <item
+        android:id="@+id/nav_mp3"
+        android:icon="@drawable/ic_mp3_file1"
+        android:title="صوتيات"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_centers"
+        android:icon="@drawable/ic_educational"
+        android:title="المراكز"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_account"
+        android:icon="@drawable/ic_profile"
+        android:title="حسابي"
+        app:itemIconTint="@drawable/nav_item_color_state"
+        app:showAsAction="ifRoom" />
+
+
+</menu>

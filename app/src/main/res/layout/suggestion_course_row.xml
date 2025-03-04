@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/parent_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="215dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_background"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_background">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/img_profile"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/fake_user_icon"
+                app:civ_border_width="3dp"
+                app:civ_border_color="@color/colorPrimaryDark"
+                android:padding="8dp"/>
+
+            <TextView
+                android:id="@+id/txt_name"
+                style="@style/InputsThemeDark"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/img_profile"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:padding="4dp"
+                android:background="@android:color/transparent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/textColor"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/teacher_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_name"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:padding="4dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/Dgrey"/>
+
+            <TextView
+                android:id="@+id/tvFaculty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/teacher_name"
+                android:layout_centerHorizontal="true"
+                android:padding="4dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@android:color/transparent"
+                android:gravity="start"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/Dgrey"/>
+
+            <Button
+                android:id="@+id/tvServe"
+                style="@style/AppButtonsTheme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/tvFaculty"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/red_background"
+                android:text="تواصل للحجز"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

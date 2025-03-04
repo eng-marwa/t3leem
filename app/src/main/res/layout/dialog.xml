@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/white_background_r6"
+    android:layout_marginEnd="32dp"
+    android:layout_marginStart="32dp"
+    android:layout_gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_background_r6">
+
+            <TextView
+                android:id="@+id/gallary"
+                style="@style/InputsThemeDark"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/red_background"
+                android:text="الإستديو"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:fontFamily="@font/raleway"/>
+
+            <TextView
+                android:id="@+id/camera"
+                style="@style/InputsThemeDark"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gallary"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/red_background"
+                android:text="الكاميرا"
+                android:textColor="#FFF"
+                android:gravity="center"
+                android:fontFamily="@font/raleway"/>
+
+            <TextView
+                android:id="@+id/close"
+                style="@style/InputsThemeDark"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/camera"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/white_background_r6"
+                android:text="إلغـاء"
+                android:textColor="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:fontFamily="@font/raleway" />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

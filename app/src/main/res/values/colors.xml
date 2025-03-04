@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_color">#F9F9F9</color>
+    <color name="colorPrimary">#E50019</color>
+    <color name="colorPrimaryDark">#DD0017</color>
+    <color name="colorAccent">#E50019</color>
+    <color name="colorRed">#F70000</color>
+    <color name="colorGreen">#37BE4D</color>
+    <color name="DarkGrey">#707070</color>
+    <color name="grey">#DFDFDF</color>
+    <color name="Dgrey">#B5B5B5</color>
+    <color name="whiteGrey">#F7F7F7</color>
+    <color name="bgGrey">#75E6E6E6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="textColor">#292929</color>
+    <color name="bgColor">#F1E4E6</color>
+    <color name="blue">#0074ff</color>
+    <color name="orange">#FB820F</color>
+    <color name="logInfo">#4a90e2</color>
+    <color name="black">#FF000000</color>
+    <color name="logWarn">#fedd56</color>
+    <color name="logError">#fe375f</color>
+    <color name="localBackground">#827b92</color>
+    <color name="remoteBackground">#484258</color>
+
+
+</resources>

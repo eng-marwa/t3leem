@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SearchResultActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel_top"
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/header"
+            style="@style/InputsThemeDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="بحث"
+            android:textColor="@color/textColor" />
+
+        <ImageButton
+            android:id="@+id/ivbClose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="16dp"
+            android:padding="8dp"
+            android:background="@color/white"
+            android:src="@drawable/ic_close" />
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_search_result"
+        style="@style/AppButtonsTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_background"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rel_top"
+        android:layout_margin="16dp"
+        android:inputType="textPersonName"
+        android:imeOptions="actionSearch"
+        android:hint=" بحث "
+        android:drawablePadding="8dp"
+        android:padding="8dp"
+        app:drawableStartCompat="@drawable/ic_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/et_search_result"/>
+
+    <TextView
+        android:id="@+id/tv_result"
+        style="@style/InputsThemeDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_search_result"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="لا يوجد نتائج للبحث"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/colorPrimaryDark"/>
+
+
+    <com.tuyenmonkey.mkloader.MKLoader
+        android:id="@+id/search_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        app:mk_color="@color/colorPrimary"
+        app:mk_type="Whirlpool"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</RelativeLayout>

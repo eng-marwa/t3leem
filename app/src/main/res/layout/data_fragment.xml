@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.DataFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteGrey">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/white_background">
+
+                    <RelativeLayout
+                        android:id="@+id/course_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/white_grey_background">
+
+                        <com.salim.ta3limes.utilities.CustomTextView
+                            android:id="@+id/course_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/white_grey_background"
+                            android:fontFamily="@font/raleway"
+                            android:text="@string/CourseName"
+                            android:enabled="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/textColor" />
+
+                        <com.salim.ta3limes.utilities.CustomTextView
+                            android:id="@+id/course_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/course_title"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/white_grey_background"
+                            android:fontFamily="@font/raleway"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:enabled="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/textColor" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/instractor_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/course_layout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/white_grey_background">
+
+                        <com.salim.ta3limes.utilities.CustomTextView
+                            android:id="@+id/instractor_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/white_grey_background"
+                            android:fontFamily="@font/raleway"
+                            android:text="@string/CourseInstractor"
+                            android:enabled="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/textColor" />
+
+                        <com.salim.ta3limes.utilities.CustomTextView
+                            android:id="@+id/instractor_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/instractor_title"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_toEndOf="@id/instractor_imgaeView"
+                            android:background="@drawable/white_grey_background"
+                            android:fontFamily="@font/raleway"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:enabled="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/textColor" />
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/instractor_imgaeView"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="5dp"
+                            app:civ_border_color="@color/colorPrimaryDark"
+                            app:civ_border_width="3dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/center_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/instractor_layout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/white_grey_background">
+
+                        <com.salim.ta3limes.utilities.CustomTextView
+                            android:id="@+id/center_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/white_grey_background"
+                            android:fontFamily="@font/raleway"
+                            android:text="@string/CenterName"
+                            android:enabled="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/textColor" />
+
+                        <com.salim.ta3limes.utilities.CustomTextView
+                            android:id="@+id/center_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/center_title"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_toEndOf="@id/center_logo"
+                            android:background="@drawable/white_grey_background"
+                            android:fontFamily="@font/raleway"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:enabled="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/textColor" />
+
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/center_logo"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginStart="5dp"
+                            app:civ_border_color="@color/colorPrimaryDark"
+                            app:civ_border_width="3dp" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/date_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/center_layout"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="16dp"
+                        android:background="@drawable/white_grey_background">
+
+                        <com.salim.ta3limes.utilities.CustomTextView
+                            android:id="@+id/date_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:background="@drawable/white_grey_background"
+                            android:fontFamily="@font/raleway"
+                            android:text="@string/CourseBeggining"
+                            android:enabled="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                            android:textColor="@color/textColor" />
+
+                        <com.salim.ta3limes.utilities.CustomTextView
+                            android:id="@+id/date_textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/date_title"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginStart="8dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="8dp"
+                            android:background="@drawable/white_grey_background"
+                            android:fontFamily="@font/raleway"
+                            android:paddingStart="8dp"
+                            android:paddingEnd="8dp"
+                            android:enabled="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:textColor="@color/textColor" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <com.salim.ta3limes.utilities.CustomTextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/_layout"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/white_grey_background"
+                    android:fontFamily="@font/raleway"
+                    android:text="@string/CourseDesc"
+                    android:enabled="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/textColor" />
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/title"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/white_background_r6"
+                    android:fontFamily="@font/raleway"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/textColor" />
+
+            </RelativeLayout>
+        </ScrollView>
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            app:mk_color="@color/colorPrimaryDark"
+            app:mk_type="Whirlpool" />
+
+    </RelativeLayout>
+
+</FrameLayout>

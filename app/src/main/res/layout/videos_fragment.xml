@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.VideosFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteGrey">
+
+        <EditText
+            android:id="@+id/ivSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_search"
+            android:drawablePadding="8dp"
+            android:padding="8dp"
+            android:hint=" بحث "
+            android:background="@drawable/white_background_r6"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:id="@+id/subscribs_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            android:background="@color/bgColor"
+            android:orientation="horizontal"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/subscribs_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+
+                android:drawableEnd="@drawable/student"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/raleway"
+                android:gravity="center"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:id="@+id/subscribs_number_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="3"
+
+                android:fontFamily="@font/raleway"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/CourseStudents"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/textColor" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/msg_textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/raleway"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="لا يوجد فيديوهات لهذا الكورس"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/textColor"
+            android:visibility="gone" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/subscribs_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_RecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:padding="5dp"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/video_row"
+                    android:nestedScrollingEnabled="false"/>
+
+                <TextView
+                    android:id="@+id/tvSuggestions"
+                    style="@style/InputsThemeDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/recyclerView_RecyclerView"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_alignParentEnd="true"
+                    android:text="كورسات مقترحة"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/textColor" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSuggestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSuggestions"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:padding="8dp"
+                    tools:itemCount="1"
+                    tools:listitem="@layout/suggestion_course_row" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+        <com.tuyenmonkey.mkloader.MKLoader
+            android:id="@+id/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            app:mk_color="@color/colorPrimaryDark"
+            app:mk_type="Whirlpool" />
+
+    </RelativeLayout>
+
+</FrameLayout>
